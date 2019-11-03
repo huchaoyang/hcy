@@ -13,7 +13,8 @@
     "pages/adderssone/addressone",
     "pages/city/city",
     "pages/city-picker/city-picker",
-    "pages/carinformation/carinformation"
+    "pages/carinformation/carinformation",
+    "pages/shopcart/shopcart"
   
   ],
   "window": {

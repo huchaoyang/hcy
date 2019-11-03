@@ -22,7 +22,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.8.3",
-	"appid": "wx37480cfa7a678e00",
+	"appid": "wx4cee03568f6d1858",
 	"projectname": "tiyanban",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -58,9 +58,10 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "pages/city/city",
-					"pathName": "pages/city/city",
+					"id": 1,
+					"name": "pages/shopcart/shopcart",
+					"pathName": "pages/shopcart/shopcart",
+					"query": "",
 					"scene": null
 				}
 			]
