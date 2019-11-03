@@ -1,0 +1,18 @@
+<view class="Qu">
+    <view class="Tu">
+      </view>
+
+       <view class="Zi">
+       <text style="font-size:30rpx;">暂时没有数据</text>
+       </view>
+
+       <view>
+        <button class='Scancode' bindtap='getScancode'>去评价</button>
+       </view>
+</view>
+
+
+
+
+
+

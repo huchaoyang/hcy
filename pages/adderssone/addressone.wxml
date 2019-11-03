@@ -1,0 +1,12 @@
+<view class="Qu">
+    <view class="Tu">
+      </view>
+
+       <view class="Zi">
+       <input style="font-size:30rpx;" placeholder="暂无收货地址,请添加"></input>
+       </view>
+
+       <view>
+        <label class='Scancode' bindtap='getScancode'>+添加收货地址</label>
+       </view>
+</view>

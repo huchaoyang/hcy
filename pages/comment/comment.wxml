@@ -1,0 +1,62 @@
+<view class="zt">
+<view>
+<view class="btbj">
+<text class="bt">姓名</text>
+</view>
+<view style="margin:5px;">
+<input class="sr"></input>
+</view>
+</view>
+<view class="btbj">
+<text class="bt">联系电话</text>
+</view>
+<view  style="margin:5px;">
+<input class="sr" maxlength="11"/>
+</view>
+</view>
+<view class="page">
+    <view class="btbj">
+        <text class="bt">产品质量和使用方面</text>
+    </view>
+    <view class="page__bd">
+        <view class="section section_gap">
+            <radio-group class="radio-group" bindchange="radioChange">
+                <radio class="radio" wx:for-items="{{items}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}">
+                    <text>{{item.value}}</text>
+                </radio>
+            </radio-group>
+        </view>
+    </view>
+</view>
+<view class="bbb">
+    <view class="btbj">
+        <text class="bt">服务方面</text>
+    </view>
+    <view class="page__bd">
+        <view class="section section_gap">
+            <radio-group class="radio-group" bindchange="radioChange">
+                <radio class="radio" wx:for-items="{{items}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}">
+                    <text>{{item.value}}</text>
+                </radio>
+            </radio-group>
+        </view>
+    </view>
+    </view>
+<view class="btbj">
+<text class="bt">对产品及服务的意见或建议</text>
+</view>
+<view style="margin:5px;">
+
+  <textarea style="border:1px solid beige ;width:720rpx;" />
+
+</view>
+
+<view class="btbj">
+<text class="bt">地址</text>
+</view>
+<view style="margin:5px;">
+<input class="sr"></input>
+</view>
+<view class="w">
+<button class="tj" >提交</button>
+</view>

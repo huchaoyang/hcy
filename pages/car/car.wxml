@@ -1,0 +1,25 @@
+
+<view class="car">
+  <view class="car-top" bindtap="car"><image src="../image/car-bao.jpg"></image></view>
+  <view class="car-bottom">
+   <view class="car-name">
+    <text>代工保养</text>
+  </view>
+   <view>
+  <text class="jiage">￥</text><text class="jiage2">1280</text>
+  </view>
+  </view>
+</view>
+<view class="car1">
+  <view class="car-top"></view>
+  <view class="car-bottom"></view>
+</view>
+<view class="car">
+  <view class="car-top"></view>
+  <view class="car-bottom"></view>
+</view>
+<view class="car1">
+  <view class="car-top"></view>
+  <view class="car-bottom"></view>
+</view>
+
