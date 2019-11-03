@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "汽车服务平台",
+    "backgroundColor": "#F5F5F5",
+    "backgroundTextStyle": "dark",
+    "usingComponents": {
+      "city-picker": "../city-picker/city-picker"
+    }
+}

@@ -1,0 +1,14 @@
+<view class="order_all">
+<view class="order_top">
+<view class="iconusecont-div {{state==index?'active-tag':''}}" bindtap="select_use" wx:for="{{use}}" data-key='{{index}}'>
+  <view class="flex-item">
+    <rich-text class='use_name'>{{item.use_name}}</rich-text>
+  </view>
+</view>
+<view class="iconusecont-div1 {{state==index?'active-tag1':''}}"  wx:for="{{neirong}}" >
+  <view class="flex-item1">
+    <view>{{item.use_pj}}</view>
+  </view>
+</view>
+</view>
+</view>

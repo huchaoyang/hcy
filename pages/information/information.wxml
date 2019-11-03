@@ -1,0 +1,14 @@
+<view class="order_top">
+<view class="order_top_v"></view>
+<view class="order_top_c">
+<view class="order_top_touxiang"><text>头像</text><image src="../image/t1.jpg"></image><rich-text>></rich-text></view>
+<view class="order_line"></view>
+<view class="order_top_name"><text class="nicheng">昵称</text><text class="name">憨憨的张坤</text><text class="fuhao">></text></view>
+<view class="order_line"></view>
+<view class="order_top_name"><text class="nicheng">性别</text><text class="sex">男</text><text class="fuhao">></text></view>
+<view class="order_line"></view>
+<view class="order_top_name"><text class="nicheng">出生日期</text><text class="date">2019-10-30</text><text class="date_fuhao">></text></view>
+<view></view>
+</view>
+<view class="order_phone" bindtap="bangding"><text>绑定手机</text><input placeholder="未绑定"></input></view>
+</view>

@@ -1,0 +1,33 @@
+
+
+.Tu{
+   width:100rpx;
+   margin-top: 220rpx;
+   margin-left: 170rpx;
+}
+
+image{
+  width:400rpx;
+  height:300rpx;
+}
+
+.Zi{
+    margin-left: 280rpx;
+}
+
+
+
+.Scancode {
+  font-size: 39rpx;
+
+  background:pink;
+
+  color:white;
+
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+}

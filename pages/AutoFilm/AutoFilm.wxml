@@ -1,0 +1,39 @@
+<!-- 图片轮播 -->
+  <swiper class="swiper" indicator-dots="true" autoplay="true" interval="4000" duration="500" circular indicator-active-color="#ffffff"> 
+   <block wx:for="{{movies}}" wx:key="index">  
+    <swiper-item>  
+     <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>  
+    </swiper-item>  
+   </block>  
+  </swiper>
+  <!---->
+  <view class="mingc">
+  <view class="mingc-name">
+    <text>汽车膜隔热安全防爆环保康得新</text>
+  </view>
+  <view>
+  <text class="jiage">￥</text><text class="jiage2">1280</text>
+  </view>
+  </view>
+  
+  <!---->
+  <view class="details">
+  <view class="details-text">
+  <view class="details-top"></view>
+    <text>商品详情</text>
+  </view>
+  <view class="details-bottom"><image src="../image/details1.jpg"></image></view>
+  <view class="details-bottom"><image src="../image/details2.jpg"></image></view>
+  <view class="details-bottom"><image src="../image/details3.jpg"></image></view>
+  <view class="details-bottom"><image src="../image/details4.jpg"></image></view>
+  <view class="details-bottom"><image src="../image/details5.jpg"></image></view>
+  <view class="details-bottom"><image src="../image/details6.jpg"></image></view>
+  <view class="details-bottom"><image src="../image/details7.jpg"></image></view>
+  <view class="details-bottom"><image src="../image/details8.jpg"></image></view>
+  <view class="details-bottom"><image src="../image/details9.jpg"></image></view>
+  <view class="details-bottom"><image src="../image/details10.jpg"></image></view>
+  </view>
+
+  <view class="add-wrap"hover-class="plus-hover">
+<navigator url="/pages/index/index">立即购买</navigator>
+</view>

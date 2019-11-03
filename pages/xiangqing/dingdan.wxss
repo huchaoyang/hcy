@@ -1,0 +1,36 @@
+.dizhi{
+   
+    
+    margin-top:5px;
+    margin-bottom: -12px;
+}
+.an{
+    margin-top:-57rpx;
+    margin-left:520rpx;  
+    width:100px;
+    background-color: red;
+    color:white; 
+    font-size:30rpx;
+}
+.Zhixian{
+        height:120rpx; 
+        width:855rpx;
+        margin-left:-50rpx;
+      
+}
+.cp{
+  border-top: 1px solid whitesmoke ; 
+   border-bottom: 1px solid whitesmoke ; 
+}
+.jianshu{
+  margin-left:580rpx;
+  margin-top:-120rpx; 
+}
+.zf{
+  margin-top:-100rpx;
+  margin-left:550rpx; 
+  width:200rpx;
+  background-color: red;
+  color:white;
+  font-size:40rpx; 
+}

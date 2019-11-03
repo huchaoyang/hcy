@@ -1,0 +1,77 @@
+ /* 图片轮播样式 */
+/**index.wxss**/
+.swiper {
+ height: 660rpx;
+ width: 100%;
+}
+ .slide-image{
+  width: 100%;
+  height: 100%;
+}
+.mingc{
+  width: 100%;
+  height:160rpx;
+
+}
+.mingc-name{
+  width:100%;
+  height: 90rpx;
+}
+.mingc-name text{
+  font-size: 31rpx;
+  padding-top: 17rpx;
+  display: block;
+}
+.jiage{
+  font-size: 27rpx;
+  color: red;
+}
+.jiage2{
+  color: red;
+}
+.details{
+  width: 100%;
+  height:100%;
+}
+.details-text{
+  width:100%;
+  height:90rpx;
+border-bottom: 1px solid rgba(0, 0, 0, 0.301);
+}
+.details-top{
+  width: 100%;
+  height: 15rpx;
+  background-color: rgba(0, 0, 0, 0.137);
+}
+.details-text text{
+  font-size: 32rpx;
+  font-family: '宋体';
+  color:rgba(0, 0, 0, 0.904);
+  display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-top: 25rpx;
+}
+.details-bottom{
+  width:100%;
+  height:800rpx;
+}
+.details-bottom image{
+  width:100%;
+  height: 100%;
+}
+.add-wrap {
+  position:fixed;
+  bottom:0;
+  display:flex;
+  justify-content:center;
+ color: white;
+  width: 100%;
+  height: 80rpx;
+  background-color:red;
+padding-top: 30rpx;
+}
+
+
+
+

@@ -1,0 +1,85 @@
+<view>
+<view>
+  <view class="dizhi">
+   <a href="" >新建收货地址</a>
+   <image src="../image/JianTou.png" style="width:30rpx;height:30rpx;margin-left:499rpx;"></image>
+  </view>
+  <view style="margin-top:-40rpx;"> <image src="../image/Zhixian.png" class="Zhixian" ></image></view>
+</view>
+ <view style="margin-top:-60rpx;">
+     <view>
+         <text style="margin-left:0rpx;">延津县小店店</text>
+         <view class="cp" >
+            <view style="margin:30rpx;">
+            <image src="../image/sp.jpg" style="width:200rpx;height:200rpx;"></image> 
+            <view class="jianshu">
+            <text  >共1件</text>
+            </view>
+            <view style="margin-left:60rpx; margin-top:40rpx;">
+            <text style="font-size:10px;">299*1</text>
+            </view>
+            </view>   
+                    
+        </view>
+     </view>
+ </view>
+    <view >
+    <view style="margin-top:30rpx;">
+       <text style="margin-left:0rpx;">配送方式</text>      
+       <button class="an">快递物流</button>
+       </view>
+            <view style="margin-top:-140rpx;"> 
+            <image src="../image/Zhixian.png" class="Zhixian" style="height:360rpx;"></image></view>
+    </view>
+    <view>
+    <view style="margin-top:-160rpx;">
+    <text>会员卡</text>
+    <view style="margin-left:480rpx;margin-top:-45rpx;font-size:14px;">
+    <text>暂无可用会员卡</text>
+       <image src="../image/JianTou.png" style="width:30rpx;height:30rpx;margin-left:10rpx;"></image>
+    </view>
+    </view>
+     <view style="margin-top:20rpx;">
+     <text>优惠卷</text>
+     <view style="margin-left:480rpx;margin-top:-45rpx;font-size:14px;">
+     <text>暂无可用优惠卷</text>
+     <image src="../image/JianTou.png" style="width:30rpx;height:30rpx;margin-left:10rpx;"></image>
+     </view>
+     </view>
+      <view style="margin-top:20rpx;">
+      <text>礼品卡</text>
+           <view style="margin-left:480rpx;margin-top:-45rpx;font-size:14px;">
+      <text>暂无可用礼品卡</text>
+           <image src="../image/JianTou.png" style="width:30rpx;height:30rpx;margin-left:10rpx;"></image>
+      </view>
+      </view>
+        <view style="margin-top:-80rpx;"> 
+        <image src="../image/Zhixian.png" class="Zhixian" style="height:230rpx;"></image></view>
+     </view>
+   </view>
+     <view>
+       <view style="margin-top:-100rpx;">
+    金额<p style="color:red ;margin-left:565rpx">￥299</p> 
+       </view>
+        <view style="margin-top:20rpx;">实付 <p style="color:red;margin-left:555rpx">￥299</p>
+          <view style="margin-top:-90rpx;"> 
+          <image src="../image/Zhixian.png" class="Zhixian" style="height:230rpx;"></image></view>
+        </view>
+        
+         <view>
+         <view style="margin-top:-100rpx;">买家备注
+         <view style="margin-left:170rpx;margin-top:-47rpx;font-size:15px">
+        <input class="weui-input" auto-focus placeholder="订单备注(30字以内)"/>
+         </view>
+         </view>
+         <view style="margin-top:-40rpx;"><image src="../image/Zhixian.png" class="Zhixian" ></image></view>
+
+         </view>
+      <view style="margin-top:-41rpx">
+        <view style="margin-left:270rpx; margin-top:-50rpx;">
+         <p style="font-size:30rpx;">合计金额</p> 
+         <p style="color:red">￥<p style="font-size:60rpx;font-width:bold">299</p></p> </view>
+        <view><button class="zf">去支付</button></view>
+      </view>
+</view>
+ 

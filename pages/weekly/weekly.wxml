@@ -1,0 +1,38 @@
+<view class="user_all" bindtap="information">
+  <view class="user_image"><image src="../image/t1.jpg"></image></view>
+  <view class="user_name">憨憨的张坤</view>
+  <view class="user_phone">15559514126</view>
+  <view class="user_fuhao">></view> 
+</view> 
+<view class="order_top">
+<view class="order_top_v"></view>
+<view class="order_toptwo" bindtap="dingdan"><text class="order_topthree">我的订单</text><text class="order_topone">查看全部></text></view>
+
+<view class="order_adress" bindtap="address"><text class="order_topthree">地址管理</text><text class="order_adresstwo">></text></view>
+
+<view class="order_bottom">
+<view class="order_view">
+<view><image class="order_image" mode='aspectFit' bindtap="changeYL" src="../image/a1.png"></image></view><text>电话</text></view>
+<view class="order_view">
+<navigator><image class="order_image" src="../image/a2.png"></image></navigator><text>会员</text></view>
+<view class="order_view">
+<navigator url="../pingjia/pingjia"><image class="order_image" src="../image/a3.png"></image></navigator><text>评价</text></view>
+<view class="order_view">
+<navigator><image class="order_image" src="../image/a4.png"></image></navigator><text>供求</text></view>
+<view class="order_view">
+<navigator><image class="order_image" src="../image/a5.png"></image></navigator><text>积分</text></view>
+<view class="order_view">
+<navigator><image class="order_image" src="../image/a6.png"></image></navigator><text>砍价</text></view>
+<view class="order_view">
+<navigator><image class="order_image" src="../image/a7.png"></image></navigator><text>礼品</text></view>
+<view class="order_view">
+<navigator><image class="order_image" src="../image/a8.png"></image></navigator><text>拼团</text></view>
+<view class="order_view">
+<navigator><image class="order_image" src="../image/a9.png"></image></navigator><text>优惠</text></view>
+</view>
+</view>
+<view class="modal-mask" bindtap="hideModal"  wx:if="{{showModal}}"></view>
+
+<view class="modal-dialog" wx:if="{{showModal}}" bindtap='tel' >
+    <view style="margin-top:20rpx;margin-left:30rpx;">800-820-88820</view>
+</view>

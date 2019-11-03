@@ -1,0 +1,75 @@
+<view class="retailStore">
+   <view class="cnaps  borderBottom">
+    <input class='m-bbt' placeholder-class='plhStyle' type='number' maxlength='50' placeholder='' bindinput="bindKeyInput" value='{{city}}' disabled></input>
+  </view>
+</view>
+<!-- 图片轮播 -->
+  <swiper class="swiper" indicator-dots="true" autoplay="true" interval="4000" duration="500" circular indicator-active-color="#ffffff"> 
+   <block wx:for="{{movies}}" wx:key="index">  
+    <swiper-item>  
+     <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>  
+    </swiper-item>  
+   </block>  
+  </swiper>
+  <!--推荐数据的展示-->
+<view class="recommend">
+<view class="recommend-img">
+  <navigator url="../ditu/ditu"><image src="../image/4.jpg"></image>
+  </navigator>
+  <text class="meirong">美容美妆</text>
+</view>
+<view class="recommend-img">
+  <navigator url="../car/car"><image src="../image/5.jpg"></image></navigator>
+    <text class="meirong">汽车服务</text>
+</view>
+<view class="recommend-img">
+  <navigator><image src="../image/6.jpg"></image></navigator>
+    <text class="meirong">改装/防护</text>
+</view>
+<view class="recommend-img">
+  <navigator><image src="../image/7.jpg"></image></navigator>
+    <text class="meirong">汽车饰品</text>
+</view>
+
+
+<view class="recommend-img1">
+  <navigator url="../AutoFilm/AutoFilm"><image src="../image/8.jpg"></image>
+  </navigator>
+  <text class="meirong">汽车贴膜</text>
+</view>
+<view class="recommend-img1">
+  <navigator url="../ditu/ditu"><image src="../image/9.jpg"></image></navigator>
+    <text class="meirong1">轮胎</text>
+</view>
+<view class="recommend-img1">
+  <navigator><image src="../image/10.jpg"></image></navigator>
+    <text class="meirong1">内饰</text>
+</view>
+<view class="recommend-img1">
+  <navigator><image src="../image/11.2.jpg"></image></navigator>
+    <text class="meirong">在线求职</text>
+</view>
+</view>
+  
+<!--详情介绍-->
+<view class="particulars">
+<!--头部-->
+<view class="particulars-border">
+<view class="particulars-img">
+<image src="../image/12.jpg"></image>
+</view>
+<view class="particulars-img">
+<image src="../image/13.jpg"></image>
+</view>
+<view class="particulars-img">
+<image src="../image/14.jpg"></image>
+</view>
+<view class="particulars-img">
+<image src="../image/15.jpg"></image>
+</view>
+</view>
+<!--底部-->
+<view class="particulars-bottom">
+<image src="../image/16.jpg"></image>
+</view>
+</view>

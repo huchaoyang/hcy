@@ -1,0 +1,25 @@
+
+.btbj{
+   background-color:rgb(243, 239, 239);
+   
+}
+ .bt{
+      font-size: 12px;
+       margin-left: 13px;
+       margin-top: -5px;
+ }
+ .radio{
+    font-size:11px;
+    display:block;
+    margin: 8px;
+ }
+
+ .sr{
+    border:1px;
+    border-style: solid;
+    border-color:beige;
+ }
+.tj{
+   background-color:cornflowerblue;
+   color: beige;
+}

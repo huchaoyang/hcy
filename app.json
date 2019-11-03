@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/weekly/weekly",
+    "pages/comment/comment",
+    "pages/dingdan/dingdan",
+    "pages/information/information",
+    "pages/car/car",
+    "pages/AutoFilm/AutoFilm",
+    "pages/phone/phone",
+    "pages/xiangqing/dingdan",
+    "pages/pingjia/pingjia",
+    "pages/adderssone/addressone",
+    "pages/city/city",
+    "pages/city-picker/city-picker",
+    "pages/carinformation/carinformation"
+  
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#e5707d",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "pages/image/11.png",
+        "iconPath": "pages/image/1.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "pages/image/22.png",
+        "iconPath": "pages/image/2.png",
+        "pagePath": "pages/comment/comment",
+        "text": "评价"
+      },
+      {
+        "selectedIconPath": "pages/image/33.png",
+        "iconPath": "pages/image/3.png",
+        "pagePath": "pages/weekly/weekly",
+        "text": "我的"
+      }
+     
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置信息将用于小程序位置接口的效果"
+    }
+  },
+  "sitemapLocation": "sitemap28.json"
+}
