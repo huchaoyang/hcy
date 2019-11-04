@@ -14,7 +14,8 @@
     "pages/city/city",
     "pages/city-picker/city-picker",
     "pages/carinformation/carinformation",
-    "pages/shopcart/shopcart"
+    "pages/shopcart/shopcart",
+    "pages/switchcity/switchcity"
   
   ],
   "window": {

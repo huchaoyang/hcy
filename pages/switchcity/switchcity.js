@@ -1,51 +1,7 @@
-
-
-// // Page({
-// //   data: {
-// //     
-// //   },
-
-// // })
-// // index.js
-// const appInstance = getApp();
-// const { globalData: { defaultCity, defaultCounty } } = appInstance
-
-// Page({
-
-//   /**
-//    * 页面的初始数据
-//    */
-//   data: {
-//     location: defaultCity,
-//     county: defaultCounty,
-//     movies: [
-//       { url: '../image/car.jpg' },
-//       { url: '../image/car2.jpg' },
-//     ]
-//   },
-//   /**
-//    * 生命周期函数--监听页面加载
-//    */
-//   onLoad: function (options) {
-//     //加定位
-//     // this.getLocation();
-//   },
-//   /**
-//    * 生命周期函数--监听页面显示
-//    */
-//   onShow: function () {
-//     const { globalData: { defaultCity, defaultCounty } } = appInstance
-//     this.setData({
-//       location: defaultCity,
-//       county: defaultCounty
-//     })
-//   },
-// })
 import { LETTERS, HOT_CITY_LIST } from '../../locale/citydata'
 import { commonMessage } from '../../locale/commonMessageZhCn'
 import { AutoPredictor } from '../../utils/autoPredictor'
 import utils from '../../utils/utils'
-
 
 const {
   isNotEmpty,
@@ -57,15 +13,9 @@ const {
   onFail,
 } = utils;
 const appInstance = getApp();
-const { globalData: { defaultCity, defaultCounty } } = appInstance
+
 Page({
   data: {
-    city: defaultCity,
-    county: defaultCounty,
-    movies: [
-      { url: '../image/car.jpg' },
-      { url: '../image/car2.jpg' },
-    ],
     sideBarLetterList: [],
     winHeight: 0,
     cityList: [],
@@ -106,9 +56,55 @@ Page({
     // close toast of chosenLetter
     setTimeout(() => { this.setData({ showChosenLetterToast: false }) }, 500)
   },
+  //选择城市
+  chooseCity: function (e) {
+    const { city, code } = safeGet(['currentTarget', 'dataset'], e)
+    this.setData({
+      auto: false,
+      showCountyPicker: true,
+      city,
+      currentCityCode: code,
+      scrollTop: 0,
+      completeList: [],
+      county: ''
+    })
+    this.getCountyList()
 
+    appInstance.globalData.defaultCity = city
+    appInstance.globalData.defaultCounty = ''
+  },
 
+  chooseCounty: function (e) {
+    const county = safeGet(['currentTarget', 'dataset', 'city'], e)
+    this.setData({ county })
+    appInstance.globalData.defaultCounty = county
+    // 返回首页
+    wx.switchTab({ url: getIndexUrl() })
+  },
 
+  //点击热门城市回到顶部
+  hotCity: function () {
+    this.setData({ scrollTop: 0 })
+  },
+  bindScroll: function (e) {
+    // console.log(e.detail)
+  },
+  getCountyList: function () {
+    console.log(commonMessage['location.county.getting']);
+    const code = this.data.currentCityCode
+
+    wx.request({
+      url: getCountyListUrl(code),
+      success: res => this.setCountyList(res),
+      fail: onFail(commonMessage['location.county.fail']),
+    })
+  },
+
+  setCountyList: function (res) {
+    const resultArray = safeGet(['data', 'result'], res)
+    const countyList = isNotEmpty(resultArray) ? resultArray[0] : []
+    this.setData({ countyList })
+  },
 
   getLocation: function () {
     console.log(commonMessage['location.city.getting'])
@@ -141,11 +137,34 @@ Page({
       // this.getCountyList();
     }
   },
-  onShow: function () {
-    const { globalData: { defaultCity, defaultCounty } } = appInstance
+  reGetLocation: function () {
+    const { city, county } = this.data
+    appInstance.globalData.defaultCity = city
+    appInstance.globalData.defaultCounty = county
+    console.log(appInstance.globalData.defaultCity);
+    //返回首页
+    wx.switchTab({ url: getIndexUrl() })
+  },
+  // 失焦时清空输入框
+  bindBlur: function (e) {
     this.setData({
-      city: defaultCity,
-      county: defaultCounty
+      inputName: '',
+      completeList: []
     })
+  },
+  // 输入框输入时
+  bindKeyInput: function (e) {
+    let inputName = e.detail.value.trim()
+    this.setData({ inputName })
+    if (!inputName) {
+      this.setData({ completeList: [] })
+    }
+    this.useAutoPredictor(inputName)
+  },
+  // 输入框自动联想搜索
+  useAutoPredictor: function (content) {
+    let autoPredictor = new AutoPredictor(content)
+    let completeList = autoPredictor.associativeSearch()
+    this.setData({ completeList })
   },
 })
