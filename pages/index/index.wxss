@@ -96,9 +96,10 @@ margin-left: 9px;
   float: left;
 }
 .container-inner image{
-  width: 35rpx;
+  width: 38rpx;
   height: 30rpx;
     float: left;
     margin-left: 78rpx;
-    margin-top: -26rpx;
+    margin-top: -30rpx;
+    
 }
