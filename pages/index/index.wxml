@@ -7,6 +7,7 @@
 <view class="container-inner">
        <navigator class="location" url="../switchcity/switchcity"> <view class="current-city" data-city="{{city}}" data-code="{{currentCityCode}}">{{city}}</view><image src="../image/sanjiao.png"></image></navigator>
 </view>
+
 </view>
 <!-- 图片轮播 -->
   <swiper class="swiper" indicator-dots="true" autoplay="true" interval="4000" duration="500" circular indicator-active-color="#ffffff"> 
