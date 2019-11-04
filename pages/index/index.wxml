@@ -3,7 +3,6 @@
     <input class='m-bbt' placeholder-class='plhStyle' type='number' maxlength='50' placeholder='' bindinput="bindKeyInput" value='{{city}}' disabled></input>
   </view>
 </view> -->
-<view>12</view>
 <view class="city-top">
 <view class="container-inner">
        <navigator class="location" url="../switchcity/switchcity"> <view class="current-city" data-city="{{city}}" data-code="{{currentCityCode}}">{{city}}</view><image src="../image/sanjiao.png"></image></navigator>
